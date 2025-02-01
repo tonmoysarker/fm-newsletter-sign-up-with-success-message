@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --gutter: 1rem;
+}
+
+.auto-flex {
+  display: flex;
+  gap: var(--gutter, 1rem);
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flow > * + * {
+  margin-top: var(--gutter, 1rem);
+}
+
+.wrapper {
+  width: 90vw;
+  width: clamp(16rem, 90vw, 75rem);
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.padding-0 {
+  padding: 0;
+}
+
+.sign-up-form__image img {
+  width: 100%;
+}
+.sign-up-form__content {
+  padding-left: calc(var(--gutter, 1rem) * 2);
+  padding-right: calc(var(--gutter, 1rem) * 2);
+}
+.sign-up-form__content ul > li {
+  --gutter: 0.7em;
+}
+.sign-up-form__content ul > li img {
+  width: 1.2em;
+  height: 1.2em;
+}
+.sign-up-form__content fieldset {
+  width: 100%;
+  border: none;
+}
+.sign-up-form__content fieldset label,
+.sign-up-form__content fieldset input {
+  display: block;
+}
+.sign-up-form__content fieldset label {
+  font-weight: 700;
+  margin-bottom: 0.8em;
+}
+.sign-up-form__content fieldset input {
+  width: 100%;
+  padding: var(--gutter, 1rem);
+  border-radius: 0.5rem;
+}
+.sign-up-form__content button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: var(--gutter, 1rem);
+  border-radius: 0.5rem;
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: hsl(235, 18%, 26%);
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 47rem) {
+  main {
+    max-width: 65rem;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 2.5rem;
+  }
+  .sign-up-form {
+    flex-direction: row-reverse;
+  }
+  .sign-up-form__image, .sign-up-form__content {
+    width: 50%;
+  }
+  .sign-up-form__content {
+    justify-content: center;
+    align-items: flex-start;
+  }
+}/*# sourceMappingURL=main.css.map */

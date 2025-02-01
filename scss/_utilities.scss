@@ -1,0 +1,19 @@
+.flow > * + * {
+  margin-top: var(--gutter, 1rem);
+}
+
+.wrapper {
+  width: 90vw;
+  width: clamp(16rem, 90vw, 75rem);
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.padding-0 {
+  padding: 0;
+}

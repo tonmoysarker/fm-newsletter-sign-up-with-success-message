@@ -1,0 +1,11 @@
+.auto-flex {
+  display: flex;
+  gap: var(--gutter, 1rem);
+}
+
+.flex-column {
+  flex-direction: column;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
